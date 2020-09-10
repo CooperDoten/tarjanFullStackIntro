@@ -90,8 +90,8 @@ function getSongs(){
             ${ response[i].artist }
             ${ response[i].published.split( 'T' )[0] }
             <button class="deleteSongBtn" data-id="${response[i].id}">Delete Me</button>
-            <button class="rankUp" data-id="${response[i].id}">Up</button>
-            <button class="rankDown" data-id="${response[i].id}">Down</button>
+            <button class="rankUp" data-id="${response[i].id}">Rank Up</button>
+            <button class="rankDown" data-id="${response[i].id}">Rank Down</button>
             </li>`)
         } // end for
     }).catch( function( err ){

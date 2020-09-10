@@ -98,9 +98,9 @@ app.put( '/songs/:id', ( req, res ) => {
     let queryString = '';
 
     if(req.body.direction === 'up'){
-        queryString = `UPDATE "songs" SET "rank" = "rank"+1 WHERE "id" = ${req.params.id}`;
-    } else if (req.body.direction === 'down'){
         queryString = `UPDATE "songs" SET "rank" = "rank"-1 WHERE "id" = ${req.params.id}`;
+    } else if (req.body.direction === 'down'){
+        queryString = `UPDATE "songs" SET "rank" = "rank"+1 WHERE "id" = ${req.params.id}`;
     } else {
         console.log("send better data");
     }
